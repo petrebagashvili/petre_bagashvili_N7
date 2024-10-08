@@ -11,12 +11,11 @@ body{
     align-items: center;
 }
 .gridcontainer{
-    margin-left: 32px;
     display: grid;
     width: 1100px;
     height: 572px;
     gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr;
 }
 .box1{
