@@ -11,10 +11,7 @@ body{
     align-items: center;
 }
 .gridcontainer{
-    margin-left: 32px;
     display: grid;
-    width: 1100px;
-    height: 572px;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 2fr 2fr;
@@ -25,11 +22,24 @@ body{
     border-radius: 8px;
     background: #733FC8;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    position: relative;
+}
+.div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.img{
+    position: absolute;
+    right: 80px;
+    z-index: 1;
 }
 .text1{
     border-radius: 100%;
     display: flex;
     flex-direction: row;
+    z-index: 3;
+    position: relative;
 
 }
 .p{
@@ -39,6 +49,8 @@ body{
     flex-direction: column;
     justify-content: flex-start ;
     align-items: flex-start;
+    z-index: 3;
+    position: relative;
 }
 .p1{
     color: #FFF;
@@ -47,6 +59,8 @@ body{
     font-weight: 500;
     line-height: 13px;
     padding-bottom: 2px;
+    z-index: 3;
+    position: relative;
 }
 .p2{
     color: #FFF;
@@ -55,11 +69,15 @@ body{
     font-weight: 500;
     line-height: 11px;
     opacity: 0.5;
+    z-index: 3;
+    position: relative;
 }
 .text2{
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 32px;
+    z-index: 3;
+    position: relative;
 }
 .p3{
     color: #FFF;
@@ -67,7 +85,8 @@ body{
     font-size: 20px;
     font-weight: 600;
     margin-top: 18px;
-
+    z-index: 3;
+    position: relative;
 }
 .p4{
     color: #CFCFCF;
@@ -77,6 +96,7 @@ body{
     line-height: 18px;
     opacity: 0.7;
     padding-top: 16px;
+    z-index: 3;
 }
 .box2{
     grid-row: 1;
@@ -84,12 +104,28 @@ body{
     border-radius: 8px;
     background: #48556A;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    position: relative;
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+.img1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 40px;
 }
 .text3{
     border-radius: 100%;
     display: flex;
     flex-direction: row;
-
+    z-index: 3;
+    position: relative;
 }
  .p{
     margin-left: 17px;
@@ -98,6 +134,7 @@ body{
     flex-direction: column;
     justify-content: flex-start ;
     align-items: flex-start;
+    position: relative;
 }
 .p5{
     color: #FFF;
@@ -105,6 +142,7 @@ body{
     font-size: 13px;
     font-weight: 500;
     line-height: 13px;
+    position: relative;
 }
 .p6{
     color: #FFF;
@@ -113,11 +151,13 @@ body{
     font-weight: 500;
     line-height: 11px;
     opacity: 0.5;
+    position: relative;
 }
 .text4{
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 32px;
+    position: relative;
 }
 .p7{
     color: #FFF;
@@ -125,6 +165,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 16px;
+    position: relative;
 }
 .p8{
     color: #FFF;
@@ -133,6 +174,7 @@ body{
     font-weight: 500;
     line-height: 18px;
     opacity: 0.7;
+    position: relative;
 }
 .box3{
     grid-row: 1/3;
@@ -141,11 +183,27 @@ body{
     background: #FFF;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
+.div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.img2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    top: 100px;
+    right: 20px;
+}
 .txt1{
     border-radius: 100%;
     display: flex;
     flex-direction: row;
-
+    position: relative;
+    z-index: 3;
 }
 .p{
     margin-left: 17px;
@@ -154,6 +212,8 @@ body{
     flex-direction: column;
     justify-content: flex-start ;
     align-items: flex-start;
+    position: relative ;
+    z-index: 3;
 }
 .t1{
     color: #48556A;
@@ -161,6 +221,8 @@ body{
     font-size: 13px;
     font-weight: 500;
     line-height: 13px;
+    position: relative ;
+    z-index: 3;
 }
 .t2{
     color: #48556A;
@@ -171,13 +233,16 @@ body{
     margin-bottom: 18px;
     opacity: 0.5;
     padding-top: 2px;
-
+    position: relative ;
+    z-index: 3;
 }
 
 .txt2{
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 32px;
+    position: relative ;
+    z-index: 3;
 }
 .t3{
     color: #48556A;
@@ -185,6 +250,8 @@ body{
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 24px;
+    position: relative ;
+    z-index: 3;
 }
 .t4{
     color: #48556A;
@@ -193,6 +260,8 @@ body{
     font-weight: 500;
     line-height: 18px;
     opacity: 0.7;
+    position: relative ;
+    z-index: 3;
 }
 .box4{
     grid-row: 2;
@@ -200,12 +269,29 @@ body{
     border-radius: 8px;
     background: #FFF;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    position: relative;
+}
+.div3{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+.img3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    top: 20px;
+    left: 30px;
 }
 .tt1{
     border-radius: 100%;
     display: flex;
     flex-direction: row;
-
+    position: relative ;
+    z-index: 3;
 }
 .p{
     margin-left: 17px;
@@ -213,7 +299,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start ;
-    align-items: flex-start;
+    align-items: flex-start; 
+    position: relative ;
+    z-index: 3;
 }
 .t5{
     color: #48556A;
@@ -222,6 +310,8 @@ body{
     font-weight: 500;
     line-height: 13px;
     padding: 2px;
+    position: relative ;
+    z-index: 3;
 }
 .t6{
     color: #48556A;
@@ -232,11 +322,15 @@ body{
     opacity: 0.5;
     margin-bottom: 18px;
     padding-top: 2px;
+    position: relative ;
+    z-index: 3;
 }
 .tt2{
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 32px;
+    position: relative ;
+    z-index: 3;
 }
 .t7{
     color: #48556A;
@@ -245,6 +339,8 @@ body{
     font-style: normal;
     font-weight: 600;
     padding-bottom: 24px;
+    position: relative ;
+    z-index: 3;
 }
 .t8{
     color: #48556A;
@@ -253,6 +349,8 @@ body{
     font-weight: 500;
     line-height: 18px;
     opacity: 0.7;
+    position: relative ;
+    z-index: 3;
 }
 
 
@@ -262,12 +360,16 @@ body{
     border-radius: 8px;
     background: #19202D;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    position: relative ;
+    z-index: 3;
 }
+
 .tr1{
     border-radius: 100%;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: row;  
+    position: relative ;
+    z-index: 3;
 }
 .p{
     margin-left: 17px;
@@ -276,6 +378,23 @@ body{
     flex-direction: column;
     justify-content: flex-start ;
     align-items: flex-start;
+    position: relative ;
+    z-index: 3;
+}
+.div4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+.img4{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    top: 30px;
+    right: 30px;
 }
 .a1{
     color: #FFF;
@@ -283,6 +402,8 @@ body{
     font-size: 13px;
     font-weight: 500;
     line-height: 13px;
+    position: relative ;
+    z-index: 3;
 }
 .a2{
     color: #FFF;
@@ -293,11 +414,15 @@ body{
     margin-bottom: 18px;
     opacity: 0.5;
     padding-top: 2px;
+    position: relative ;
+    z-index: 3;
 }
 .tr2{
     margin-left: 32px;
     margin-right: 32px;
     margin-bottom: 32px;
+    position: relative ;
+    z-index: 3;
 }
 .a3{
     color: #ECF2F8;
@@ -305,6 +430,8 @@ body{
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 24px;
+    position: relative;
+    z-index: 3;
 }
 .a4{
     color: #FFF;
@@ -313,6 +440,8 @@ body{
     font-weight: 500;
     line-height: 18px;
     opacity: 0.7;
+    position: relative;
+    z-index: 3;
 }
 @media screen and ( max-width:327px) {
     body{
@@ -324,10 +453,7 @@ body{
         align-items: center;
     }
     .gridcontainer{
-        margin-left: 32px;
         display: grid;
-        width: 327px;
-        height: 1823px;
         padding: 72px 24px 71px 24px;
         gap: 30px;
         grid-template-columns: 1fr ;
@@ -335,7 +461,8 @@ body{
     }
     .box1{
         grid-column: 1;
-        grid-row: 1 2 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
         border-radius: 8px;
         background: #733FC8;
         box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
@@ -394,7 +521,7 @@ body{
         padding-right: 16px;
     }
     .box2{
-        grid-row: 4;
+        grid-row: 3;
         grid-column: 1;
         border-radius: 8px;
         background: #48556A;
